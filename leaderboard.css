@@ -1,0 +1,309 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f1f1f1;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 700px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+th, td {
+  padding: 5px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: lightblue;
+  font-weight: bold;
+}
+
+/* #leaderboardBtn {
+  padding: 7px 12px;
+  font-size: 14px;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+} */
+
+#leaderboardBtn:hover {
+  background-color: #45a049;
+}
+
+.input-section {
+  margin-bottom: 10px;
+}
+
+.input-section label {
+  display: inline-block;
+  width: 100px;
+}
+
+.input-section input[type="text"],
+.input-section input[type="number"] {
+  padding: 5px;
+  width: 200px;
+  border-radius: 3px;
+  border: 1px solid navy;
+}
+
+#addPlayerBtn {
+  padding: 7px 12px;
+  font-size: 14px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#addPlayerBtn:hover {
+  background-color: #0056b3;
+}
+
+#addPlayerBtn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.editBtn {
+  padding: 5px 10px;
+  font-size: 14px;
+  background-color: lightslategray;
+  color: white;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-right: 5px;
+}
+
+.editBtn:hover {
+  background-color: rgb(69, 129, 189);
+}
+
+.deleteBtn {
+  padding: 5px 10px;
+  font-size: 14px;
+  background-color: #ff6161;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.deleteBtn:hover {
+  background-color: #ff4141;
+}
+
+.logout-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: inline-block;
+  padding: 8px 12px;
+  background-color: lightseagreen;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.logout-button:hover {
+  background-color: #d32f2f;
+}
+
+.user-section {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: transparent;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.user-section h2 {
+  margin-bottom: 10px;
+}
+
+.add-user-form {
+  max-width: 400px;
+  margin-bottom: 20px;
+}
+
+.add-user-form .form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.add-user-form label {
+  flex: 0 0 100px;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.add-user-form input[type="text"],
+.add-user-form input[type="password"],
+.add-user-form select {
+  flex: 1;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.add-user-form input[type="submit"] {
+  padding: 6px 12px;
+  font-size: 14px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-user-form input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.user-list {
+  margin-bottom: 20px;
+}
+
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.user-table th,
+.user-table td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+.user-table th {
+  background-color: lightblue;
+  font-weight: bold;
+}
+
+.userListBtn {
+  padding: 5px 10px;
+  font-size: 14px;
+  background-color: green;
+  color: white;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-right: 5px;
+  border-radius: 5px;
+}
+
+.editUserBtn {
+  padding: 5px 10px;
+  font-size: 14px;
+  background-color: lightslategray;
+  color: white;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-right: 5px;
+}
+
+.editUserBtn:hover {
+  background-color: rgb(69, 129, 189);
+}
+
+.deleteUserBtn {
+  padding: 5px 10px;
+  font-size: 14px;
+  background-color: #ff6161;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.deleteUserBtn:hover {
+  background-color: #ff4141;
+}
+
+.chartContainer {
+  width: 440px;
+  height: 310px;
+  margin: 0 auto;
+  margin-top: 42px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.leaderboard-container {
+  padding: 20px;
+  background-color:transparent;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  flex-basis: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+.leaderboard-container h1 {
+  margin-bottom: -33px;
+  text-align: left;
+  font-size: 25px;
+}
+
+#leaderboardBtn {
+  margin-left: auto;
+  padding: 7px 12px;
+  font-size: 14px;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.chart-container {
+  padding: 20px;
+  background-color:transparent;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  flex-basis: 40%;
+  margin-left: 20px;
+  height:500px;
+}
+
+
+.chart-container h1 {
+  margin-bottom: 10px;
+}
+
+
